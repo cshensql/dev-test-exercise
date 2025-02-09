@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   const inputStyles =
     "w-full border border-gray-900 invalid:placeholder-shown:border-gray-900 peer invalid:border-invalid sm:text-sm p-2.5 text-black rounded-lg block focus:outline-none focus:border-blue-500";
@@ -48,20 +50,20 @@ export default function Home() {
         <div className="w-full text-center text-base mt-8">
           <p>
             Forgot{" "}
-            <a href="/" className={linkStyles}>
+            <Link href="/" className={linkStyles}>
               Username
-            </a>{" "}
+            </Link>{" "}
             /{" "}
-            <a href="/" className={linkStyles}>
+            <Link href="/" className={linkStyles}>
               Password
-            </a>
+            </Link>
             ?
           </p>
           <p>
-            Don't have an account?{" "}
-            <a href="/" className={linkStyles}>
+            Don&apos;t have an account?{" "}
+            <Link href={"/"} className={linkStyles}>
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </form>
